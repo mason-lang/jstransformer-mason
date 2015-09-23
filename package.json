@@ -1,0 +1,26 @@
+{
+	"name": "jstransformer-mason",
+	"version": "0.0.0",
+	"description": "Mason support for JSTransformers.",
+	"keywords": ["jstransformer"],
+	"files": ["index.js"],
+	"repository": "mason-lang/jstransformer-mason",
+	"license": "WTFPL",
+	"scripts": {
+		"lint": "eslint index.js",
+		"test": "test-jstransformer",
+		"test-coverage": "test-jstransformer coverage"
+	},
+	"dependencies": {
+		"convert-source-map": "1.1.1",
+		"fs-promise": "0.3.1",
+		"mason-compile": "mason-lang/mason-compile",
+		"mason-node-util": "mason-lang/mason-node-util"
+	},
+	"devDependencies": {
+		"eslint": "1.10.1",
+		"eslint-config-mason": "mason-lang/eslint-config-mason",
+		"test-jstransformer": "1.0.0"
+	},
+	"eslintConfig": {"extends": "eslint-config-mason"}
+}
